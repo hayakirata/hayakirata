@@ -7,7 +7,7 @@
 
 .large-img{
   max-width:100%;
- max-height:700px;
+ max-height:600px;
 }
 
 #content{
@@ -15,16 +15,4 @@
     padding-top: 125px;
 }
 
-/* 
- * uncomment this for some css3 drop shadows and rounded corners.
- */
 
-.thumbnail,.nav, .large-img, .crop-img{
-  border-radius: 25px;
-  padding-top:5px;
-}
-/*
-.thumbnail,.nav {
-  box-shadow: 10px 10px 5px #888888;
-}
-*/
