@@ -47,7 +47,7 @@ $(document).ready(function(){
             $(".album-thumbnail").click(function(){
             var index = $(this).data("id");
      var b =gallery.albums[index];
-      document.getElementById("pdf").src = b.src;
+      document.getElementById("pdf").href = b.href;
  
     $("#myModal").modal("toggle");
 });
