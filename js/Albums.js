@@ -9,7 +9,7 @@ var gallery = {
     albums :[
     {name :"Interactivity with JavaScript",
    university : "Coursera - University of Michigan",
-src:"https://github.com/hayakirata/hayakirata/master/Pdfs/Coursera%20XSUXXP643HPH.pdf"
+src:"https://github.com/hayakirata/hayakirata/Pdfs/Coursera%20XSUXXP643HPH.pdf"
 },
 
 
