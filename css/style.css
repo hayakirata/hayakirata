@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis:600,800');
+@import url('https://fonts.googleapis.com/css?family=Satisfy&display=swap');
+body {
+   font-family: 'Dosis', 'sans-serif';
+    font-size: 150%;
+    color: #000;
+    text-shadow: 0.2px 0.2px 0.2px #666;
+width:100%;
+    
+}
+
+.navbar{
+ background-color: #fff;   
+border-bottom: 1px solid #e3e3e3;
+padding: 1% 0;
+    
+}
+
+#title{
+    
+    font-family: 'Satisfy', 'sans-serif';
+}
+.navbar-brand 
+
+{
+ 
+font-size: 20px;
+    font-weight: 500;
+    padding-left: 40px;
+    
+}
+
+.navbar-brand a {
+        color:#000;
+    padding-bottom: 2px;
+
+}
+.navbar-nav li 
+{
+    padding-right: 15px;
+    
+}
+.material-icons{
+    margin-right:20px;
+    padding-right: 17px;
+   border-right: 1px solid black;
+}
+
+h2{
+    margin: 0;
+       
+    color: #000;
+}
+.navbar-inverse .navbar-nav li a{
+    
+    color :#000;
+}
+ 
+.navbar-inverse .navbar-nav li a:hover{
+    
+    background-color:#e3e3e3;
+    color:#293462;
+}
+
+#me{
+    
+    padding-top: 100px;
+    background-color: #fafafa;
+}
+
+.navbar-header {
+    padding-bottom: 5px;
+    
+}
+
+.navbar-inverse .navbar-collapse,.navbar-inverse .navbar-form {
+    
+    border-color: #bad7df;
+}
+
+.navbar-header .navbar-toggle  {
+    
+    border-color: #bad7df;
+}
+
+.navbar-inverse .navbar-toggle:hover,.navbar-inverse .navbar-toggle:focus {
+    
+     background-color: #666;
+}
+
+.navbar-header .navbar-toggle .icon-bar {
+    
+    background-color: #bad7df;
+}
+
+
+h1{
+  
+    font-weight: 800;
+    text-shadow: 2px 2px 2px #666;
+    padding-bottom: 2%;
+    
+}
+
+
+h3{
+    
+ 
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+p {
+    font-size: 100%;
+    padding: 1%;
+    
+}
+
+.icons{
+       max-width: 200px;
+    margin: 3% auto;
+    
+}
+.icon {
+  
+
+ max-width: 200px;
+    margin: 2% auto;
+    
+}
+
+.social a {
+    
+   padding: 0.5%;
+    color:#bbded6;
+}
+
+
+.social a:hover{
+    color:#2d5c7f;
+    
+}
+
+
+#education {
+    
+       padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #fafafa;
+}
+
+#experience {
+    
+     padding-top: 30px;
+    padding-bottom: 10px;
+    background-color: #fafafa;  
+}
+
+#software {
+      padding-top: 30px;
+    padding-bottom: 10px;
+    background-color: #fafafa;
+}
+
+
+
+#contact {
+    
+    padding: 2% 0 3%;
+    background-color: #fff;
+}
+
+#courses {
+
+         padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #fafafa;
+}
+#hobby {
+
+         padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #fafafa;
+}
+.btn {
+    
+    color:#293462;
+}
+
+
+@media (max-width:768px){
+
+
+
+#education {
+    
+    padding: 30px 0 3%;
+
+}
+
+#experience {
+    
+      padding: 30px 0 3%;
+    
+}
+
+#software {
+    
+    padding: 30px 0 3%;
+
+}
+
+
+
+#contact {
+    
+    padding: 0 0 3%;
+  
+}
+
+#courses {
+
+        padding: 30px 0 3%;
+ 
+}
+}
