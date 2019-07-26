@@ -9,7 +9,7 @@ var gallery = {
     albums :[
     {name :"Interactivity with JavaScript",
    university : "Coursera - University of Michigan",
-src:"Pdfs/Coursera 3MRL6DXR3WH3.pdf"
+src:"https://drive.google.com/file/d/1cdhSTGSGio8sQGLhB8Z5iBbdlbpaEzB0/view?usp=sharingf"
 },
 
 
