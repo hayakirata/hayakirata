@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Haya Kirata Gallery</title>
+  <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
+      <script src="js/jquery.min.js"></script>
+  
+    <script src="js/handlebars-v3.0.3.js"></script>
+  <script src="scrolling.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
+     <script src="js/gallery/Albums.js"> </script>
+    <script src="js/gallery/gallery.js"> </script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+       <link href="css/gallery.css" rel="stylesheet"> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <link rel="stylesheet" href="css/style.css">
+ <script type="text/javascript">
+     $(document).on('click','.navbar-collapse.in',function(e) {
+    if( $(e.target).is('a') && ( $(e.target).attr('class') != 'dropdown-toggle' ) ) {
+        $(this).collapse('hide');
+    }
+    });  // to get responsive navbar menu to automatically close after anchor link clicked
+  </script>
+</head>
+    
+    <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"> </span>
+                <span class="icon-bar"> </span>
+                <span class="icon-bar"> </span>
+                </button> <!--- end of button --->
+                <a class="navbar-brand" href="gallery.html" id="title">  <h2> <i class="material-icons" style="font-size:25px">camera_alt</i><b>My Gallery </b></h2></a>
+
+            </div> <!---- end of nav header --->
+               <div class="collapse navbar-collapse" id="myNavbar">
+           <ul class="nav navbar-nav navbar-right">
+        <li><a id="albums-tab" href="#" style="font-family:'Satisfy';font-size:22px"> <b>Albums </b></a></li>
+
+        <li><a href="#"id="photos-tab" style="font-family:'Satisfy'; font-size:22px"> <b>Photos </b></a></li>
+
+
+     
+         </ul>
+        </div><!--- end of collapse navbar --->
+        </div> <!---- end of container ---->
+        </nav> <!---- end of nav ---->
+        
+    <div id="content"  class="container-fluid text-center"  role="main">
+    
+  </div> <!-- / container -->
+    
+        
+        <script id="albums-template" type="text/x-handlebars-template">
+<div class="container-fluid text-center">
+  <div class="row">
+
+    {{#each albums}}
+    <div class="col-xs-12 col-md-6"> 
+        <div class="album-thumbnail"  data-id="{{@index}}">
+          <img class="crop-img" src="{{thumbnail}}" alt=""/> 
+            
+          <div class="caption">
+              <h4> {{name}} </h4>
+              <p>{{photos.length}} photos</p>
+          </div>
+         </div>
+    </div> <!-- / col -->
+
+    {{/each}}
+
+  </div> <!-- / row -->
+    </div>
+</script>
+
+<!-- this is the template for the photos view of a single album -->
+<!-- 
+    like albums view it uses a bootstrap grid format to display the photos in an album
+    
+    Each photos is displayed with anumbnail image, a name and 
+    a description
+-->
+<script id="photos-template" type="text/x-handlebars-template">
+<div class="container-fluid text-center">
+  <div class="row">
+    <!-- xs-12 : small display shows a single column (taking up 12 grid columns)-->
+    <!-- md-3 : medium and up displays use 3 grid columns per column -->
+
+    {{#each photos}}
+    <div class="col-xs-12 col-md-4"> 
+     <div class="photo-thumbnail"  data-id="{{@index}}">
+        <img class="crop-img" src="{{src}}" alt=""/> 
+          
+
+      </div>
+       
+    </div> <!-- / col -->
+    {{/each}}
+
+  </div> <!-- / row -->
+    </div>
+</script>
+
+<!-- this is the template for the view a single photo -->
+<!-- 
+    It is displayed as a large image with title and description
+-->
+<script id="photo-template" type="text/x-handlebars-template">
+<div class="container-fluid center-text">
+  <div class="row">
+    <div class="col-xs-12 col-md-12"> 
+        <img class="large-img" src="{{src}}" alt=""/> 
+          
+
+      </div> <!-- / col -->
+
+  </div> <!-- / row -->
+    </div>
+</script>
+
+
+    </body>
+</html>
