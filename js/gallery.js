@@ -48,7 +48,7 @@ $(document).ready(function(){
             var index = $(this).data("id");
      var b =gallery.albums[index];
       document.getElementById("pdf").src = b.src;
-        document.getElementById("pdf").data = b.src;
+        document.getElementById("pdfs").data = b.src;
  
     $("#myModal").modal("toggle");
 });
